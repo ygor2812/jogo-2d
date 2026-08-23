@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c1pqc4h3yp1xg"]
+
+[ext_resource type="PackedScene" uid="uid://gfv07erg23gh" path="res://entities/player.tscn" id="1_e2knd"]
+[ext_resource type="Texture2D" uid="uid://dlmnp7t8eyicr" path="res://sprites/4 - Winter World/Background parts/_Complete_static_BG_(288 x 208).png" id="2_2xpkg"]
+
+[node name="Forest" type="Node2D" unique_id=387447183]
+
+[node name="CharacterBody2D" parent="." unique_id=292797912 instance=ExtResource("1_e2knd")]
+position = Vector2(0, 3)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=716015513]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=362947994]
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1486093731]
+texture = ExtResource("2_2xpkg")
+centered = false
