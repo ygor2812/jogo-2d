@@ -50,7 +50,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=292797912]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=292797912 groups=["Player"]]
+collision_layer = 16
+collision_mask = 239
 script = ExtResource("1_b0kkn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2030975490]
@@ -64,9 +66,3 @@ sprite_frames = SubResource("SpriteFrames_lgkx6")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.17530404
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=836570839]
-limit_left = 0
-limit_right = 9999992
-limit_bottom = 9999
-position_smoothing_enabled = true

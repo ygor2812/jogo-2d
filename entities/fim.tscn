@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c3xpcpf3snejo"]
+
+[ext_resource type="Script" uid="uid://b2xk3vsbn62aa" path="res://scripts/fim.gd" id="1_1wos5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lgkx6"]
+size = Vector2(20, 38)
+
+[node name="fim" type="Area2D" unique_id=1148317970]
+collision_layer = 64
+collision_mask = 16
+script = ExtResource("1_1wos5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1918630238]
+position = Vector2(0, -9)
+shape = SubResource("RectangleShape2D_lgkx6")
+debug_color = Color(0.2536864, 0.62444204, 0.34253356, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
