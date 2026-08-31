@@ -612,7 +612,7 @@ sources/0 = SubResource("TileSetAtlasSource_rt361")
 
 [node name="Jogo" type="Node2D" unique_id=744523692]
 position = Vector2(-24, -3)
-metadata/_edit_vertical_guides_ = [-7.0, -10.0, -7.0]
+metadata/_edit_vertical_guides_ = [-7.0, -10.0, -7.0, 4120.0]
 
 [node name="fim" parent="." unique_id=1148317970 instance=ExtResource("1_2ffdx")]
 z_index = 2
@@ -660,7 +660,7 @@ tile_set = SubResource("TileSet_lgkx6")
 [node name="3-bigMountain" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1592789647]
 texture_filter = 1
 texture_repeat = 2
-motion_scale = Vector2(0, 0)
+motion_scale = Vector2(0.3, 0)
 motion_mirroring = Vector2(288, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/3-bigMountain" unique_id=969600825]
@@ -690,7 +690,7 @@ region_rect = Rect2(0, 0, 576, 208)
 texture_filter = 1
 texture_repeat = 2
 position = Vector2(0.2, 0)
-motion_scale = Vector2(0.54, 0.1)
+motion_scale = Vector2(0.85, 1)
 motion_mirroring = Vector2(288, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/1-SnowForest" unique_id=957273283]
@@ -703,7 +703,7 @@ region_rect = Rect2(0, 0, 576, 208)
 position = Vector2(145, 106)
 limit_left = -7
 limit_top = -9998247
-limit_right = 9999845
+limit_right = 4120
 limit_bottom = 208
 
 [editable path="fim"]
