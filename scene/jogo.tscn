@@ -105,7 +105,7 @@ texture = ExtResource("2_4kyrq")
 
 [sub_resource type="TileSet" id="TileSet_1umjo"]
 physics_layer_0/collision_layer = 1
-physics_layer_0/collision_mask = 63
+physics_layer_0/collision_mask = 48
 sources/0 = SubResource("TileSetAtlasSource_md0lt")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ayn3t"]
@@ -184,7 +184,7 @@ texture = ExtResource("8_r0abp")
 
 [sub_resource type="TileSet" id="TileSet_bjerq"]
 physics_layer_0/collision_layer = 8
-physics_layer_0/collision_mask = 63
+physics_layer_0/collision_mask = 48
 sources/0 = SubResource("TileSetAtlasSource_f1mrm")
 sources/1 = SubResource("TileSetAtlasSource_q3ja0")
 sources/2 = SubResource("TileSetAtlasSource_xjvcy")
@@ -299,7 +299,7 @@ texture = ExtResource("9_r0abp")
 
 [sub_resource type="TileSet" id="TileSet_1u2ot"]
 physics_layer_0/collision_layer = 2
-physics_layer_0/collision_mask = 63
+physics_layer_0/collision_mask = 48
 sources/0 = SubResource("TileSetAtlasSource_d4k4r")
 sources/1 = SubResource("TileSetAtlasSource_51x3e")
 
@@ -416,7 +416,7 @@ texture = ExtResource("12_ccw7a")
 
 [sub_resource type="TileSet" id="TileSet_vb82f"]
 physics_layer_0/collision_layer = 5
-physics_layer_0/collision_mask = 63
+physics_layer_0/collision_mask = 48
 sources/0 = SubResource("TileSetAtlasSource_r0abp")
 sources/1 = SubResource("TileSetAtlasSource_u2ixw")
 sources/2 = SubResource("TileSetAtlasSource_25dyn")
@@ -526,7 +526,7 @@ texture = ExtResource("15_f1mrm")
 
 [sub_resource type="TileSet" id="TileSet_ci0t7"]
 physics_layer_0/collision_layer = 128
-physics_layer_0/collision_mask = 191
+physics_layer_0/collision_mask = 48
 sources/0 = SubResource("TileSetAtlasSource_qfctu")
 sources/1 = SubResource("TileSetAtlasSource_yq8nr")
 
@@ -701,9 +701,9 @@ region_rect = Rect2(0, 0, 576, 208)
 
 [node name="Camera2D" parent="ParallaxBackground" unique_id=881416448 instance=ExtResource("19_xjvcy")]
 position = Vector2(145, 106)
-limit_left = -7
+limit_left = -6
 limit_top = -9998247
-limit_right = 4120
+limit_right = 4121
 limit_bottom = 208
 
 [editable path="fim"]
