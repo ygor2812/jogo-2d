@@ -277,7 +277,7 @@ region_rect = Rect2(0, 0, 576, 208)
 texture_filter = 1
 texture_repeat = 2
 position = Vector2(518, 5)
-motion_scale = Vector2(0.5, 0.5)
+motion_scale = Vector2(0.5, 0.25)
 motion_mirroring = Vector2(280, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/3-floating cloud" unique_id=63266622]
@@ -291,7 +291,7 @@ region_rect = Rect2(0, 0, 576, 208)
 texture_filter = 1
 texture_repeat = 2
 position = Vector2(-1, -1)
-motion_scale = Vector2(0.5, 0.5)
+motion_scale = Vector2(0.5, 0.25)
 motion_mirroring = Vector2(280, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/4-background cloud" unique_id=1903179311]
