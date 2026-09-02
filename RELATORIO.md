@@ -19,7 +19,7 @@ _Quais valores de `motion_scale` você usou em cada camada, e como chegou neles?
 |--------|--------------|--------------------|
 | (mais distante) x:0.3 y:0.0 porque eu achei mais agradavel
 | (meio) x:0.5 y:0.25 porque eu achei mais agradavel
-| (perto) x: 0.85 y:1.0 porque eu achei mais agradavel
+| (perto) x: 0.85 y:0.35 porque eu achei mais agradavel
 
 Primeira tentativa: parallax nao subia junto com a camera e o motion ficava rapido demais
 Atual:Funcional
