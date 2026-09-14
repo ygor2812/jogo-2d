@@ -1,0 +1,324 @@
+[gd_scene format=3 uid="uid://n8jrqqja600q"]
+
+[ext_resource type="Script" path="res://scripts/zumbi.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://sprites/combate/zumbi_lento/idle.png" id="zl_tex_1"]
+[ext_resource type="Texture2D" path="res://sprites/combate/zumbi_lento/walk.png" id="zl_tex_2"]
+[ext_resource type="Texture2D" path="res://sprites/combate/zumbi_lento/attack.png" id="zl_tex_3"]
+[ext_resource type="Texture2D" path="res://sprites/combate/zumbi_lento/hurt.png" id="zl_tex_4"]
+[ext_resource type="Texture2D" path="res://sprites/combate/zumbi_lento/death.png" id="zl_tex_5"]
+
+[sub_resource type="AtlasTexture" id="zl_idle_1"]
+atlas = ExtResource("zl_tex_1")
+region = Rect2(0, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_idle_2"]
+atlas = ExtResource("zl_tex_1")
+region = Rect2(70, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_idle_3"]
+atlas = ExtResource("zl_tex_1")
+region = Rect2(140, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_idle_4"]
+atlas = ExtResource("zl_tex_1")
+region = Rect2(210, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_idle_5"]
+atlas = ExtResource("zl_tex_1")
+region = Rect2(280, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_idle_6"]
+atlas = ExtResource("zl_tex_1")
+region = Rect2(350, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_idle_7"]
+atlas = ExtResource("zl_tex_1")
+region = Rect2(420, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_idle_8"]
+atlas = ExtResource("zl_tex_1")
+region = Rect2(490, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_walk_9"]
+atlas = ExtResource("zl_tex_2")
+region = Rect2(0, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_walk_10"]
+atlas = ExtResource("zl_tex_2")
+region = Rect2(70, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_walk_11"]
+atlas = ExtResource("zl_tex_2")
+region = Rect2(140, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_walk_12"]
+atlas = ExtResource("zl_tex_2")
+region = Rect2(210, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_walk_13"]
+atlas = ExtResource("zl_tex_2")
+region = Rect2(280, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_walk_14"]
+atlas = ExtResource("zl_tex_2")
+region = Rect2(350, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_walk_15"]
+atlas = ExtResource("zl_tex_2")
+region = Rect2(420, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_walk_16"]
+atlas = ExtResource("zl_tex_2")
+region = Rect2(490, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_attack_17"]
+atlas = ExtResource("zl_tex_3")
+region = Rect2(0, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_attack_18"]
+atlas = ExtResource("zl_tex_3")
+region = Rect2(70, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_attack_19"]
+atlas = ExtResource("zl_tex_3")
+region = Rect2(140, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_attack_20"]
+atlas = ExtResource("zl_tex_3")
+region = Rect2(210, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_attack_21"]
+atlas = ExtResource("zl_tex_3")
+region = Rect2(280, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_attack_22"]
+atlas = ExtResource("zl_tex_3")
+region = Rect2(350, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_hurt_23"]
+atlas = ExtResource("zl_tex_4")
+region = Rect2(0, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_hurt_24"]
+atlas = ExtResource("zl_tex_4")
+region = Rect2(70, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_hurt_25"]
+atlas = ExtResource("zl_tex_4")
+region = Rect2(140, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_hurt_26"]
+atlas = ExtResource("zl_tex_4")
+region = Rect2(210, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_hurt_27"]
+atlas = ExtResource("zl_tex_4")
+region = Rect2(280, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_hurt_28"]
+atlas = ExtResource("zl_tex_4")
+region = Rect2(350, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_hurt_29"]
+atlas = ExtResource("zl_tex_4")
+region = Rect2(420, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_death_30"]
+atlas = ExtResource("zl_tex_5")
+region = Rect2(0, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_death_31"]
+atlas = ExtResource("zl_tex_5")
+region = Rect2(70, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_death_32"]
+atlas = ExtResource("zl_tex_5")
+region = Rect2(140, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_death_33"]
+atlas = ExtResource("zl_tex_5")
+region = Rect2(210, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_death_34"]
+atlas = ExtResource("zl_tex_5")
+region = Rect2(280, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_death_35"]
+atlas = ExtResource("zl_tex_5")
+region = Rect2(350, 0, 70, 67)
+
+[sub_resource type="AtlasTexture" id="zl_death_36"]
+atlas = ExtResource("zl_tex_5")
+region = Rect2(420, 0, 70, 67)
+
+[sub_resource type="SpriteFrames" id="zl_SpriteFrames"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("zl_idle_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_idle_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_idle_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_idle_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_idle_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_idle_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_idle_7")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_idle_8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("zl_walk_9")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_walk_10")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_walk_11")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_walk_12")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_walk_13")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_walk_14")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_walk_15")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_walk_16")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("zl_attack_17")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_attack_18")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_attack_19")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_attack_20")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_attack_21")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_attack_22")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("zl_hurt_23")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_hurt_24")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_hurt_25")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_hurt_26")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_hurt_27")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_hurt_28")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_hurt_29")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("zl_death_30")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_death_31")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_death_32")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_death_33")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_death_34")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_death_35")
+}, {
+"duration": 1.0,
+"texture": SubResource("zl_death_36")
+}],
+"loop": false,
+"name": &"death",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="zl_CapsuleShape2D"]
+radius = 12.0
+height = 64.0
+
+[sub_resource type="RectangleShape2D" id="zl_RectangleShape2D"]
+size = Vector2(40, 44)
+
+[node name="ZumbiLento" type="CharacterBody2D"]
+collision_layer = 32
+collision_mask = 1
+script = ExtResource("1_script")
+vida_maxima = 4
+velocidade = 35.0
+dano = 1
+distancia_de_ataque = 60.0
+distancia_de_visao = 130.0
+animacao_de_andar = "walk"
+tempo_entre_ataques = 1.2
+quadro_do_golpe = 3
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("zl_SpriteFrames")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("zl_CapsuleShape2D")
+
+[node name="AreaAtaque" type="Area2D" parent="."]
+position = Vector2(30, 0)
+collision_layer = 0
+collision_mask = 16
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaAtaque"]
+shape = SubResource("zl_RectangleShape2D")

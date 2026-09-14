@@ -1,0 +1,378 @@
+[gd_scene format=3 uid="uid://bddjvbjvcdbxc"]
+
+[ext_resource type="Script" path="res://scripts/jogador.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://sprites/combate/sobrevivente/idle.png" id="jog_tex_1"]
+[ext_resource type="Texture2D" path="res://sprites/combate/sobrevivente/walk.png" id="jog_tex_2"]
+[ext_resource type="Texture2D" path="res://sprites/combate/sobrevivente/jump.png" id="jog_tex_3"]
+[ext_resource type="Texture2D" path="res://sprites/combate/sobrevivente/attack.png" id="jog_tex_4"]
+[ext_resource type="Texture2D" path="res://sprites/combate/sobrevivente/hurt.png" id="jog_tex_5"]
+[ext_resource type="Texture2D" path="res://sprites/combate/sobrevivente/death.png" id="jog_tex_6"]
+
+[sub_resource type="AtlasTexture" id="jog_idle_1"]
+atlas = ExtResource("jog_tex_1")
+region = Rect2(0, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_idle_2"]
+atlas = ExtResource("jog_tex_1")
+region = Rect2(68, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_idle_3"]
+atlas = ExtResource("jog_tex_1")
+region = Rect2(136, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_idle_4"]
+atlas = ExtResource("jog_tex_1")
+region = Rect2(204, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_idle_5"]
+atlas = ExtResource("jog_tex_1")
+region = Rect2(272, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_idle_6"]
+atlas = ExtResource("jog_tex_1")
+region = Rect2(340, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_idle_7"]
+atlas = ExtResource("jog_tex_1")
+region = Rect2(408, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_idle_8"]
+atlas = ExtResource("jog_tex_1")
+region = Rect2(476, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_walk_9"]
+atlas = ExtResource("jog_tex_2")
+region = Rect2(0, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_walk_10"]
+atlas = ExtResource("jog_tex_2")
+region = Rect2(68, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_walk_11"]
+atlas = ExtResource("jog_tex_2")
+region = Rect2(136, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_walk_12"]
+atlas = ExtResource("jog_tex_2")
+region = Rect2(204, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_walk_13"]
+atlas = ExtResource("jog_tex_2")
+region = Rect2(272, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_walk_14"]
+atlas = ExtResource("jog_tex_2")
+region = Rect2(340, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_walk_15"]
+atlas = ExtResource("jog_tex_2")
+region = Rect2(408, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_walk_16"]
+atlas = ExtResource("jog_tex_2")
+region = Rect2(476, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_jump_17"]
+atlas = ExtResource("jog_tex_3")
+region = Rect2(0, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_jump_18"]
+atlas = ExtResource("jog_tex_3")
+region = Rect2(68, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_jump_19"]
+atlas = ExtResource("jog_tex_3")
+region = Rect2(136, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_jump_20"]
+atlas = ExtResource("jog_tex_3")
+region = Rect2(204, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_jump_21"]
+atlas = ExtResource("jog_tex_3")
+region = Rect2(272, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_jump_22"]
+atlas = ExtResource("jog_tex_3")
+region = Rect2(340, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_jump_23"]
+atlas = ExtResource("jog_tex_3")
+region = Rect2(408, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_attack_24"]
+atlas = ExtResource("jog_tex_4")
+region = Rect2(0, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_attack_25"]
+atlas = ExtResource("jog_tex_4")
+region = Rect2(68, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_attack_26"]
+atlas = ExtResource("jog_tex_4")
+region = Rect2(136, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_attack_27"]
+atlas = ExtResource("jog_tex_4")
+region = Rect2(204, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_attack_28"]
+atlas = ExtResource("jog_tex_4")
+region = Rect2(272, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_attack_29"]
+atlas = ExtResource("jog_tex_4")
+region = Rect2(340, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_attack_30"]
+atlas = ExtResource("jog_tex_4")
+region = Rect2(408, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_hurt_31"]
+atlas = ExtResource("jog_tex_5")
+region = Rect2(0, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_hurt_32"]
+atlas = ExtResource("jog_tex_5")
+region = Rect2(68, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_hurt_33"]
+atlas = ExtResource("jog_tex_5")
+region = Rect2(136, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_hurt_34"]
+atlas = ExtResource("jog_tex_5")
+region = Rect2(204, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_hurt_35"]
+atlas = ExtResource("jog_tex_5")
+region = Rect2(272, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_hurt_36"]
+atlas = ExtResource("jog_tex_5")
+region = Rect2(340, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_hurt_37"]
+atlas = ExtResource("jog_tex_5")
+region = Rect2(408, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_death_38"]
+atlas = ExtResource("jog_tex_6")
+region = Rect2(0, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_death_39"]
+atlas = ExtResource("jog_tex_6")
+region = Rect2(68, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_death_40"]
+atlas = ExtResource("jog_tex_6")
+region = Rect2(136, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_death_41"]
+atlas = ExtResource("jog_tex_6")
+region = Rect2(204, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_death_42"]
+atlas = ExtResource("jog_tex_6")
+region = Rect2(272, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_death_43"]
+atlas = ExtResource("jog_tex_6")
+region = Rect2(340, 0, 68, 64)
+
+[sub_resource type="AtlasTexture" id="jog_death_44"]
+atlas = ExtResource("jog_tex_6")
+region = Rect2(408, 0, 68, 64)
+
+[sub_resource type="SpriteFrames" id="jog_SpriteFrames"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("jog_idle_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_idle_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_idle_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_idle_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_idle_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_idle_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_idle_7")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_idle_8")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("jog_walk_9")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_walk_10")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_walk_11")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_walk_12")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_walk_13")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_walk_14")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_walk_15")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_walk_16")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("jog_jump_17")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_jump_18")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_jump_19")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_jump_20")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_jump_21")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_jump_22")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_jump_23")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 17.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("jog_attack_24")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_attack_25")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_attack_26")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_attack_27")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_attack_28")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_attack_29")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_attack_30")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("jog_hurt_31")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_hurt_32")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_hurt_33")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_hurt_34")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_hurt_35")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_hurt_36")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_hurt_37")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("jog_death_38")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_death_39")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_death_40")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_death_41")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_death_42")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_death_43")
+}, {
+"duration": 1.0,
+"texture": SubResource("jog_death_44")
+}],
+"loop": false,
+"name": &"death",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="jog_CapsuleShape2D"]
+radius = 10.0
+height = 60.0
+
+[sub_resource type="RectangleShape2D" id="jog_RectangleShape2D"]
+size = Vector2(60, 40)
+
+[node name="jogador" type="CharacterBody2D" groups=["Player"]]
+collision_layer = 16
+collision_mask = 239
+script = ExtResource("1_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("jog_SpriteFrames")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("jog_CapsuleShape2D")
+
+[node name="AreaGolpe" type="Area2D" parent="."]
+position = Vector2(40, 0)
+collision_layer = 0
+collision_mask = 32
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaGolpe"]
+shape = SubResource("jog_RectangleShape2D")
